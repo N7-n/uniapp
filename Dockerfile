@@ -16,7 +16,7 @@ RUN npm install --global yarn
 COPY Gemfile /$APP_ROOT/Gemfile
 COPY Gemfile.lock /$APP_ROOT/Gemfile.lock
 
-RUN gem install bundler:2.1.4
+RUN gem install bundler:2.3.7
 RUN bundle install
 
 ADD . $APP_ROOT
